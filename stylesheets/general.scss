@@ -1,0 +1,27 @@
+/* Body */
+
+body{
+	font-family: 'Open Sans', sans-serif; 
+
+}
+
+html{
+	box-sizing:box-boder;
+	 scroll-behavior: smooth;
+	    overflowY: hidden;
+}
+
+.container{
+	@include flexbox;
+	flex-direction:column;
+	width: 100vw; 
+	height:100vh;
+}
+
+.content-wrapper {
+	width:100vw;
+    @include flexbox;
+    flex-direction: column;
+    justify-content:center;}
+
+

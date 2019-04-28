@@ -36,5 +36,83 @@ footer, header, hgroup, menu, nav, section {
 /*Body
 ======================================
 */
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+html {
+  box-sizing: box-boder;
+  scroll-behavior: smooth;
+  overflowY: hidden; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; }
+
+.content-wrapper {
+  width: 100vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+/*Header
+======================================
+*/
+header {
+  width: 100vw;
+  display: inherit;
+  flex-direction: column; }
+  header nav {
+    display: inherit;
+    justify-content: flex-start;
+    background-color: #66cccc; }
+    header nav ul {
+      display: inherit;
+      justify-content: space-around;
+      list-style-type: none; }
+      header nav ul li {
+        padding: 2em;
+        font-variant: all-petite-caps;
+        cursor: pointer; }
+        header nav ul li:hover {
+          color: #993366; }
+  header .header {
+    height: 40rem;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url(../images/Header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    header .header .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100vw;
+      background: #e0e0e0;
+      -webkit-transform: translateX(-49%);
+      -moz-transform: translateX(-49%);
+      -ms-transform: translateX(-49%);
+      -o-transform: translateX(-49%);
+      transform: translateX(-49%);
+      background-image: url(../images/test.png);
+      background-position: right 215px;
+      background-repeat: no-repeat;
+      background-size: 86px; }
 
 /*# sourceMappingURL=style.css.map */

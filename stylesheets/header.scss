@@ -1,0 +1,63 @@
+/*Header
+======================================
+*/
+
+header {
+    width: 100vw;
+    display: inherit;
+    flex-direction: column;
+
+    nav {
+        display: inherit;
+        justify-content: flex-start;
+        background-color: $Blue;
+
+        ul {
+            display: inherit;
+            justify-content: space-around;
+            list-style-type: none;
+
+            li {
+                padding: 2em;
+                font-variant: all-petite-caps;
+                cursor: pointer;
+
+                &:hover {
+                    color: $Pink;
+                }
+            }
+        }
+    }
+
+    .header {
+        height: 40rem;
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        background-image: url(../images/Header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+        .header-content {
+          display:flex;
+        justify-content:center;
+        align-items:center;
+            height: 100%;
+            width: 100vw;
+            background: #e0e0e0;
+            -webkit-transform: translateX(-49%);
+            -moz-transform: translateX(-49%);
+            -ms-transform: translateX(-49%);
+            -o-transform: translateX(-49%);
+            transform: translateX(-49%);
+            background-image: url(../images/test.png);
+            background-position: right 215px;
+            background-repeat: no-repeat;
+            background-size: 86px;
+        }
+    }
+}

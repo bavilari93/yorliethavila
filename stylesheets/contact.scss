@@ -1,0 +1,11 @@
+/*contact
+======================================
+*/
+
+.contact{
+	width: 100vw;
+	height: 10rem;
+	@include flexbox;
+	flex-direction: column; 
+	justify-content:center;
+}

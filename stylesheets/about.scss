@@ -1,0 +1,39 @@
+/*about
+======================================
+*/
+
+.about {
+    @include flexbox;
+    flex-direction: row;
+    width: 100vw;
+    height: max-content;
+    margin-bottom: 2rem;
+
+    .about-image {
+
+        height: 20rem;
+        width: 50%;
+        background-image: url(../images/Header.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .about-content {
+        width: 50%;
+        text-align: -webkit-center;
+        color: $White;
+
+        .icons {
+         width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+
+            i {
+                font-size: 1.5em;
+                color: $White;
+            }
+        }
+    }
+}

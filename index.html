@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Shadows+Into+Light|Open+Sans:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Yorlieth Avila</title>
 </head>
@@ -16,9 +17,12 @@
             <header>
                 <nav>
                     <ul>
-                        <li>home</li>
-                        <li>work</li>
-                        <li>about</li>
+                        <a class="modal-open"href="#work">
+                            <li>work</li>
+                        </a>
+                        <a href="#about">
+                            <li>about</li>
+                        </a>
                     </ul>
                 </nav>
                 <div class="header">
@@ -41,10 +45,9 @@
                 <section class="work-content">
                     <h1>Latest Work</h1>
                     <p>this is lastest</p>
-                    <a href="" class="work-button">See More</a>
+                    <a href="#work" class="work-button modal-open">See More</a>
                 </section>
                 <div class="slide-container">
-                    
                     <div class="slider">
                         <div class="thumbs">
                             <div class="slide first"></div>
@@ -56,7 +59,42 @@
                     <button class="next">Next</button>
                 </div>
             </section>
+            <section id="about" class="about">
+                <div class="about-image"></div>
+                <div class="about-content">
+                    <h1>Why Me</h1>
+                    <p>i'm awesome</p>
+                    <section class="icons">
+                        <a id="mail" href="mailto:yorliethavila12@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="http://biancavila.com/docs/resume_bianca_avila.pdf"><i class="far fa-file"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </section>
+                </div>
+            </section>
+            <section class="contact">
+                <a href="mailto:yorliethavila12@gmail.com" class="hire-button">Let's work together</a>
+                <p>© 2019 Yorlieth Avila</p>
+            </section>
         </div>
+        <!-- modal work -->
+        <section id="work">
+            <span class="icon">
+                <div class="bar1"></div>
+                <div class="bar2">close</div>
+                <div class="bar3"></div>
+            </span>
+            <span id="scroll-top">
+                &#10148;</span>
+            <section class="tittle">
+                <h1>one</h1>
+                <p>date</p>
+            </section>
+            <section class="about-work">
+                <h1>project 1</h1>
+                <p>about project</p>
+            </section>
+            <section class="work-img"></section>
+        </section>
     </div>
     <script src="./float.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

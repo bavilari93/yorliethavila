@@ -56,6 +56,13 @@ html {
   height: 100vh;
   overflow-x: hidden; }
 
+h1 {
+  font-size: x-large; }
+
+p {
+  margin-top: .5rem;
+  margin-bottom: 2rem; }
+
 .content-wrapper {
   width: 100vw;
   display: -webkit-box;
@@ -90,14 +97,19 @@ header {
       display: inherit;
       justify-content: space-around;
       list-style-type: none; }
-      header nav ul li {
-        padding: 2em;
-        font-variant: all-petite-caps;
-        cursor: pointer;
-        letter-spacing: .2em;
-        font-size: larger; }
+      header nav ul a {
+        text-decoration: none;
+        color: #fff; }
+        header nav ul a:hover {
+          transform: scale(1.2); }
+        header nav ul a li {
+          padding: 2em;
+          font-variant: all-petite-caps;
+          cursor: pointer;
+          letter-spacing: .2em;
+          font-size: larger; }
   header .header {
-    height: 30rem;
+    height: 40rem;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -126,17 +138,20 @@ header {
       font-variant: all-petite-caps;
       text-align: center;
       line-height: .8em; }
-    header .header .hire-button {
-      margin-top: 2rem;
-      letter-spacing: .2em;
-      font-variant: all-petite-caps;
-      text-decoration: none;
-      color: #fff;
-      border: solid 0.04em #fff;
-      padding: .5em 1em;
-      border-radius: 2em;
-      font-size: 1.2em;
-      cursor: pointer; }
+
+.hire-button {
+  margin-top: 2rem;
+  letter-spacing: .2em;
+  font-variant: all-petite-caps;
+  text-decoration: none;
+  color: #fff;
+  border: solid 0.04em #fff;
+  padding: .5em 1em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  cursor: pointer; }
+  .hire-button:hover {
+    transform: scale(1.1); }
 
 /*Skills
 ======================================
@@ -155,10 +170,6 @@ header {
   .skills .skills-description {
     width: 60vw;
     color: white; }
-    .skills .skills-description h1 {
-      font-size: x-large; }
-    .skills .skills-description p {
-      margin-top: .5rem; }
   .skills .skill-content {
     width: 100vw;
     display: inherit;
@@ -185,17 +196,12 @@ header {
   display: flex;
   align-items: center;
   width: 100vw;
-  height: -webkit-fill-available; }
+  margin: 5rem 0rem; }
   .latest-work .work-content {
     width: 40%;
     padding: 0rem 2rem;
     color: #fff;
     text-align: -webkit-center; }
-    .latest-work .work-content h1 {
-      font-size: x-large; }
-    .latest-work .work-content p {
-      margin-top: .5rem;
-      margin-bottom: 2rem; }
     .latest-work .work-content a {
       text-decoration: none;
       border-radius: 1em;
@@ -231,7 +237,8 @@ header {
   position: relative;
   transition: all 2s; }
 
-.prev, .next {
+.prev,
+.next {
   border: solid .1em white;
   width: 56px;
   height: 25px;
@@ -244,6 +251,124 @@ header {
 
 .next {
   left: calc(100% - 40px); }
+
+/*about
+======================================
+*/
+.about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: max-content;
+  margin-bottom: 2rem; }
+  .about .about-image {
+    height: 20rem;
+    width: 50%;
+    background-image: url(../images/Header.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .about .about-content {
+    width: 50%;
+    text-align: -webkit-center;
+    color: #fff; }
+    .about .about-content .icons {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly; }
+      .about .about-content .icons i {
+        font-size: 1.5em;
+        color: #fff; }
+
+/*contact
+======================================
+*/
+.contact {
+  width: 100vw;
+  height: 10rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+/*Modal work
+======================================
+*/
+#work {
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.icon {
+  margin: 1.5rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: -webkit-right;
+  cursor: pointer; }
+  .icon .bar1,
+  .icon .bar2,
+  .icon .bar3 {
+    width: 40px;
+    height: 2px;
+    background: #000;
+    margin: 6px 0;
+    transition: 0.4s; }
+  .icon .bar2 {
+    background: none;
+    font-variant: all-petite-caps;
+    font-size: large;
+    background: none;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -8px; }
+  .icon:hover .bar1,
+  .icon:hover .bar3 {
+    background: #ff3333; }
+  .icon:hover .bar1 {
+    -webkit-transform: rotate(-20deg) translate(-9px, 6px);
+    transform: rotate(-40deg) translate(-14px, 8px); }
+  .icon:hover .bar2 {
+    opacity: 0; }
+  .icon:hover .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(40deg) translate(-9px, -8px); }
+
+#scroll-top {
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  background-color: #1F2833;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  padding: .2rem; }
+  #scroll-top:hover {
+    background-color: #ff3333; }
 
 /*Mobile
 ======================================

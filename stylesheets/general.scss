@@ -19,6 +19,15 @@ html{
     overflow-x: hidden;
 }
 
+h1 {
+            font-size: x-large;
+        }
+
+        p {
+            margin-top: .5rem;
+            margin-bottom:2rem;
+        }
+
 .content-wrapper {
 	width:100vw;
     @include flexbox;

@@ -1,7 +1,36 @@
 $(()=>{
-	// overlaying
+	// modal
+    const openModalButton = document.querySelectorAll('.modal-open');
+    const element = document.getElementById('scroll-top');
+    console.log(openModalButton)
 
-    // slider
+    openModalButton.forEach(button=>{
+         const contentWrappper = document.querySelector('.content-wrapper');
+         console.log(contentWrappper)
+            const modal = document.getElementById('work');
+            const span = modal.querySelector('span');
+        button.addEventListener('click',()=>{
+            element.style.display='-webkit-inline-box';
+            modal.style.width = '100%';
+            contentWrappper.style.display = 'none';
+        })
+        span.onclick = function() {
+
+            element.style.display='none';
+            modal.style.width = "0%";
+            contentWrappper.style.display = 'flex';
+        }
+    })
+
+     // scroll icon top on click 
+
+    element.addEventListener('click',((event)=>{
+        event.preventDefault();
+        $("#modal").animate({ scrollTop: 0 }, "slow");
+        return false;
+    }))
+
+    // slider projetcs
     var elementCount = $('.slide').length,
           current      = 1,
           elemWidth    =300,
@@ -24,6 +53,9 @@ $(()=>{
             $('.thumbs').css('transform','translateX(-'+move+'px)');
         }
     })
+
+    
+
 
 
 	// typing 

@@ -7,73 +7,87 @@ header {
     display: inherit;
     flex-direction: column;
 
-    
+
 
     nav {
         display: inherit;
         justify-content: flex-end;
-        color:$White;
+        color: $White;
 
         ul {
             display: inherit;
             justify-content: space-around;
             list-style-type: none;
 
+            a {
+                text-decoration: none;
+                color: $White;
+            &:hover{
+            transform:scale(1.2);
+            }
+
             li {
                 padding: 2em;
                 font-variant: all-petite-caps;
                 cursor: pointer;
                 letter-spacing: .2em;
-    font-size: larger;
+                font-size: larger;
             }
+
+            }
+
         }
     }
 
     .header {
-        height: 30rem;
+        height: 40rem;
         overflow: hidden;
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         @include flexbox;
 
 
         span {
             height: 50px;
-            font-size:larger;
-            margin-top:1em;
+            font-size: larger;
+            margin-top: 1em;
             letter-spacing: .2em;
             font-variant: all-petite-caps;
             color: $White;
-           
+
         }
 
         h1 {
-        	color:$Red;
+            color: $Red;
             letter-spacing: .1em;
             text-shadow: 2px 2px 7px #373636;
-            font-size:5em;
+            font-size: 5em;
             font-weight: 900;
             font-variant: all-petite-caps;
-            text-align:center;
-            line-height:.8em;
+            text-align: center;
+            line-height: .8em;
 
         }
-       .hire-button{
-       margin-top:2rem;
-       letter-spacing: .2em;
-       	font-variant: all-petite-caps;
-       	text-decoration:none;
-       	color:$White;
-       	border:solid .04em $White;
-       	padding: .5em 1em;
-       	border-radius: 2em;
-       	font-size:1.2em;
-       	cursor:pointer;
-       }
 
+    }
+}
 
+.hire-button {
+    margin-top: 2rem;
+    letter-spacing: .2em;
+    font-variant: all-petite-caps;
+    text-decoration: none;
+    color: $White;
+    border: solid .04em $White;
+    padding: .5em 1em;
+    border-radius: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
     }
 }

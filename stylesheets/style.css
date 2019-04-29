@@ -42,8 +42,7 @@ body {
 
 html {
   box-sizing: box-boder;
-  scroll-behavior: smooth;
-  overflowY: hidden; }
+  scroll-behavior: smooth; }
 
 .container {
   display: -webkit-box;
@@ -54,11 +53,11 @@ html {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  overflow-x: hidden; }
 
 .content-wrapper {
   width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -113,7 +112,8 @@ header {
     align-items: center; }
     header .header span {
       height: 50px;
-      font-size: xx-large;
+      font-size: larger;
+      margin-top: 1em;
       letter-spacing: .2em;
       font-variant: all-petite-caps;
       color: #fff; }
@@ -137,5 +137,55 @@ header {
       border-radius: 2em;
       font-size: 1.2em;
       cursor: pointer; }
+
+/*Skills
+======================================
+*/
+.skills {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 2rem; }
+  .skills .skills-description {
+    width: 60vw;
+    color: white; }
+    .skills .skills-description h1 {
+      font-size: x-large; }
+    .skills .skills-description p {
+      margin-top: .5rem; }
+  .skills .skill-content {
+    width: 100vw;
+    display: inherit;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    flex-wrap: wrap; }
+    .skills .skill-content .skill {
+      width: 40%;
+      text-align: center;
+      height: 10rem;
+      border-radius: .9em;
+      background: white; }
+
+/*Mobile
+======================================
+*/
+/*Mobile
+======================================
+*/
+@media only screen and (max-width: 480px) {
+  .skills {
+    padding: 0rem !important; }
+
+  .skill {
+    width: 90% !important;
+    margin-top: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

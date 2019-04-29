@@ -8,7 +8,7 @@ body{
 html{
 	box-sizing:box-boder;
 	 scroll-behavior: smooth;
-	    overflowY: hidden;
+	 
 }
 
 .container{
@@ -16,11 +16,11 @@ html{
 	flex-direction:column;
 	width: 100vw; 
 	height:100vh;
+    overflow-x: hidden;
 }
 
 .content-wrapper {
 	width:100vw;
-	height:100vh;
     @include flexbox;
     flex-direction: column;
     justify-content:center;

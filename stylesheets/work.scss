@@ -1,0 +1,81 @@
+/*Work
+======================================
+*/
+
+.latest-work{
+@include flexbox;
+width: 100vw;
+     height: -webkit-fill-available;
+	.work-content{
+	    width: 40%;
+	    padding: 0rem 2rem;
+	    color:$White;
+	        text-align: -webkit-center;
+
+        h1 {
+            font-size: x-large;
+        }
+
+        p {
+            margin-top: .5rem;
+            margin-bottom:2rem;
+        }
+        a{
+            text-decoration: none;
+    border-radius: 1em;
+    border: solid .09em white;
+    padding: .5em 1em;
+    color: white;
+    cursor: pointer;
+        }
+	}
+}
+
+
+/*slider*/
+.slide-container{
+    width: 60%;
+	height: 380px;
+}
+
+.slider{
+	width: 100%;
+	height: 325px;
+	margin-top: 10px;
+	overflow:hidden;
+}
+
+.thumbs{
+position: relative;
+height: 100%;
+width:1950px;
+transition: transform 2s;
+}
+
+.thumbs div{
+	width: 280px;
+	height: 300px;
+	margin:10px;
+	border-radius: 1em;
+	background:$White;
+	float: left;
+	position: relative;
+	transition: all 2s;
+}
+
+.prev, .next{
+	border: solid .1em white;
+    width: 56px;
+    height: 25px;
+    margin-left: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+    background: none;
+    color: #fff;
+
+}
+
+.next{
+	left: calc(100% - 40px);
+}

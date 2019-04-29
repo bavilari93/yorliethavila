@@ -11,4 +11,17 @@
 	    width: 90% !important;
 	    margin-top:1rem;
 	}
+	.latest-work{
+	flex-direction:column;
+	.work-content{
+	width: 60%;
+	}
+
+	}
+	.slide-container{
+	width: 100%;
+	}
+	.prev, .next{
+	margin-left:6rem;
+	}
 }

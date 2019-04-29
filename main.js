@@ -1,6 +1,31 @@
 $(()=>{
 	// overlaying
 
+    // slider
+    var elementCount = $('.slide').length,
+          current      = 1,
+          elemWidth    =300,
+          move         = 0;
+    $('.next').click(()=>{
+        if(current<elementCount){ 
+            $('.thumbs').toggleClass('move');
+            move+= elemWidth;
+            current++;
+            $('.thumbs').css('transform','translateX(-'+move+'px)');
+        }
+
+    })
+    $('.prev').click(()=>{
+        console.log('click')
+        if(current > 0){
+            $('.thumbs').toggleClass('move');       
+            move -= elemWidth;
+            current--;
+            $('.thumbs').css('transform','translateX(-'+move+'px)');
+        }
+    })
+
+
 	// typing 
 
 	    var TxtRotate = function(el, toRotate, period) {

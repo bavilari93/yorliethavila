@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 */
 /* Body */
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Poiret One', cursive; }
 
 html {
   box-sizing: box-boder;
@@ -58,6 +58,7 @@ html {
 
 .content-wrapper {
   width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -65,7 +66,15 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background: #ff3333;
+  background: -moz-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
+  background: -webkit-gradient(left top, right top, color-stop(23%, #ff3333), color-stop(45%, #f82b14), color-stop(51%, #f6290c), color-stop(82%, #db0f25), color-stop(100%, #cc0033));
+  background: -webkit-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
+  background: -o-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
+  background: -ms-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
+  background: linear-gradient(to right, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#cc0033', GradientType=1); }
 
 /*Header
 ======================================
@@ -76,8 +85,8 @@ header {
   flex-direction: column; }
   header nav {
     display: inherit;
-    justify-content: flex-start;
-    background-color: #66cccc; }
+    justify-content: flex-end;
+    color: #fff; }
     header nav ul {
       display: inherit;
       justify-content: space-around;
@@ -85,34 +94,48 @@ header {
       header nav ul li {
         padding: 2em;
         font-variant: all-petite-caps;
-        cursor: pointer; }
-        header nav ul li:hover {
-          color: #993366; }
+        cursor: pointer;
+        letter-spacing: .2em;
+        font-size: larger; }
   header .header {
-    height: 40rem;
+    height: 30rem;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
-    background-image: url(../images/Header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    header .header .header-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100vw;
-      background: #e0e0e0;
-      -webkit-transform: translateX(-49%);
-      -moz-transform: translateX(-49%);
-      -ms-transform: translateX(-49%);
-      -o-transform: translateX(-49%);
-      transform: translateX(-49%);
-      background-image: url(../images/test.png);
-      background-position: right 215px;
-      background-repeat: no-repeat;
-      background-size: 86px; }
+    flex-direction: column;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center; }
+    header .header span {
+      height: 50px;
+      font-size: xx-large;
+      letter-spacing: .2em;
+      font-variant: all-petite-caps;
+      color: #fff; }
+    header .header h1 {
+      color: #ff3333;
+      letter-spacing: .1em;
+      text-shadow: 2px 2px 7px #373636;
+      font-size: 5em;
+      font-weight: 900;
+      font-variant: all-petite-caps;
+      text-align: center;
+      line-height: .8em; }
+    header .header .hire-button {
+      margin-top: 2rem;
+      letter-spacing: .2em;
+      font-variant: all-petite-caps;
+      text-decoration: none;
+      color: #fff;
+      border: solid 0.04em #fff;
+      padding: .5em 1em;
+      border-radius: 2em;
+      font-size: 1.2em;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

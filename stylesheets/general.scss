@@ -1,7 +1,7 @@
 /* Body */
 
 body{
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Poiret One', cursive;
 
 }
 
@@ -20,8 +20,17 @@ html{
 
 .content-wrapper {
 	width:100vw;
+	height:100vh;
     @include flexbox;
     flex-direction: column;
-    justify-content:center;}
+    justify-content:center;
+    background: rgba(255, 51, 51, 1);
+    background: -moz-linear-gradient(left, rgba(255, 51, 51, 1) 23%, rgba(248, 43, 20, 1) 45%, rgba(246, 41, 12, 1) 51%, rgba(219, 15, 37, 1) 82%, rgba(204, 0, 51, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(23%, rgba(255, 51, 51, 1)), color-stop(45%, rgba(248, 43, 20, 1)), color-stop(51%, rgba(246, 41, 12, 1)), color-stop(82%, rgba(219, 15, 37, 1)), color-stop(100%, rgba(204, 0, 51, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 51, 51, 1) 23%, rgba(248, 43, 20, 1) 45%, rgba(246, 41, 12, 1) 51%, rgba(219, 15, 37, 1) 82%, rgba(204, 0, 51, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 51, 51, 1) 23%, rgba(248, 43, 20, 1) 45%, rgba(246, 41, 12, 1) 51%, rgba(219, 15, 37, 1) 82%, rgba(204, 0, 51, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 51, 51, 1) 23%, rgba(248, 43, 20, 1) 45%, rgba(246, 41, 12, 1) 51%, rgba(219, 15, 37, 1) 82%, rgba(204, 0, 51, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 51, 51, 1) 23%, rgba(248, 43, 20, 1) 45%, rgba(246, 41, 12, 1) 51%, rgba(219, 15, 37, 1) 82%, rgba(204, 0, 51, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#cc0033', GradientType=1);}
 
 

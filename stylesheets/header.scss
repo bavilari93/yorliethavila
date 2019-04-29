@@ -7,10 +7,12 @@ header {
     display: inherit;
     flex-direction: column;
 
+    
+
     nav {
         display: inherit;
-        justify-content: flex-start;
-        background-color: $Blue;
+        justify-content: flex-end;
+        color:$White;
 
         ul {
             display: inherit;
@@ -21,43 +23,56 @@ header {
                 padding: 2em;
                 font-variant: all-petite-caps;
                 cursor: pointer;
-
-                &:hover {
-                    color: $Pink;
-                }
+                letter-spacing: .2em;
+    font-size: larger;
             }
         }
     }
 
     .header {
-        height: 40rem;
+        height: 30rem;
         overflow: hidden;
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
-        background-image: url(../images/Header.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-
-
-        .header-content {
-          display:flex;
+        flex-direction: column;
         justify-content:center;
-        align-items:center;
-            height: 100%;
-            width: 100vw;
-            background: #e0e0e0;
-            -webkit-transform: translateX(-49%);
-            -moz-transform: translateX(-49%);
-            -ms-transform: translateX(-49%);
-            -o-transform: translateX(-49%);
-            transform: translateX(-49%);
-            background-image: url(../images/test.png);
-            background-position: right 215px;
-            background-repeat: no-repeat;
-            background-size: 86px;
+        @include flexbox;
+
+
+        span {
+            height: 50px;
+            font-size: xx-large;
+            letter-spacing: .2em;
+            font-variant: all-petite-caps;
+            color: $White;
+           
         }
+
+        h1 {
+        	color:$Red;
+            letter-spacing: .1em;
+            text-shadow: 2px 2px 7px #373636;
+            font-size:5em;
+            font-weight: 900;
+            font-variant: all-petite-caps;
+            text-align:center;
+            line-height:.8em;
+
+        }
+       .hire-button{
+       margin-top:2rem;
+       letter-spacing: .2em;
+       	font-variant: all-petite-caps;
+       	text-decoration:none;
+       	color:$White;
+       	border:solid .04em $White;
+       	padding: .5em 1em;
+       	border-radius: 2em;
+       	font-size:1.2em;
+       	cursor:pointer;
+       }
+
+
     }
 }

@@ -72,14 +72,14 @@ p {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: #ff3333;
-  background: -moz-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
-  background: -webkit-gradient(left top, right top, color-stop(23%, #ff3333), color-stop(45%, #f82b14), color-stop(51%, #f6290c), color-stop(82%, #db0f25), color-stop(100%, #cc0033));
-  background: -webkit-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
-  background: -o-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
-  background: -ms-linear-gradient(left, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
-  background: linear-gradient(to right, #ff3333 23%, #f82b14 45%, #f6290c 51%, #db0f25 82%, #cc0033 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#cc0033', GradientType=1); }
+  background: #ff5f6c;
+  background: -moz-linear-gradient(left, #ff5f6c 25%, #ff866e 54%, #ffc471 100%);
+  background: -webkit-gradient(left top, right top, color-stop(25%, #ff5f6c), color-stop(54%, #ff866e), color-stop(100%, #ffc471));
+  background: -webkit-linear-gradient(left, #ff5f6c 25%, #ff866e 54%, #ffc471 100%);
+  background: -o-linear-gradient(left, #ff5f6c 25%, #ff866e 54%, #ffc471 100%);
+  background: -ms-linear-gradient(left, #ff5f6c 25%, #ff866e 54%, #ffc471 100%);
+  background: linear-gradient(to right, #ff5f6c 25%, #ff866e 54%, #ffc471 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5f6c', endColorstr='#ffc471', GradientType=1 ); }
 
 /*Header
 ======================================
@@ -135,7 +135,7 @@ header {
       font-variant: all-petite-caps;
       color: #fff; }
     header .header h1 {
-      color: #ff3333;
+      color: #ff5f6c;
       letter-spacing: .1em;
       text-shadow: 2px 2px 7px #373636;
       font-size: 5em;
@@ -260,7 +260,7 @@ header {
   .thumbs div:nth-child(1n) {
     background-image: url(../images/projects/sculpture.JPG); }
   .thumbs div:nth-child(2n) {
-    background-image: url(../images/projects/view.JPG); }
+    background-image: url(../images/projects/buildings.JPG); }
   .thumbs div:nth-child(3n) {
     background-image: url(../images/projects/dino.JPG); }
 
@@ -374,7 +374,7 @@ header {
         box-shadow: 2px 1px 7px black; }
         #work .work-content .project .tittle h1 {
           font-size: 3em;
-          color: #ff3333; }
+          color: #ff5f6c; }
         #work .work-content .project .tittle p {
           padding: 0rem 1rem; }
       #work .work-content .project .work-img {
@@ -383,9 +383,9 @@ header {
         background-size: cover;
         background-repeat: no-repeat; }
       #work .work-content .project .one {
-        background-image: url(../images/projects/flower.JPG); }
+        background-image: url(../images/projects/buildings.JPG); }
       #work .work-content .project .two {
-        background-image: url(../images/projects/kid.JPG); }
+        background-image: url(../images/projects/sculpture.JPG); }
 
 .more-projects {
   display: -webkit-box;
@@ -408,9 +408,9 @@ header {
     .more-projects div:nth-child(1n) {
       background-image: url(../images/projects/dino.JPG); }
     .more-projects div:nth-child(2n) {
-      background-image: url(../images/projects/line.JPG); }
+      background-image: url(../images/projects/flower.JPG); }
     .more-projects div:nth-child(3n) {
-      background-image: url(../images/projects/sculpture.JPG); }
+      background-image: url(../images/projects/kid.JPG); }
     .more-projects div:nth-child(4n) {
       background-image: url(../images/projects/name.JPG); }
     .more-projects div:nth-child(5n) {
@@ -420,7 +420,7 @@ header {
     .more-projects div:nth-child(7n) {
       background-image: url(../images/projects/scultura.JPG); }
     .more-projects div:nth-child(8n) {
-      background-image: url(../images/projects/view.JPG); }
+      background-image: url(../images/projects/line.JPG); }
     .more-projects div:nth-child(9n) {
       background-image: url(../images/projects/soul.JPG); }
 
@@ -448,7 +448,7 @@ header {
     margin-top: -8px; }
   .icon:hover .bar1,
   .icon:hover .bar3 {
-    background: #ff3333; }
+    background: #ff5f6c; }
   .icon:hover .bar1 {
     -webkit-transform: rotate(-20deg) translate(-9px, 6px);
     transform: rotate(-40deg) translate(-14px, 8px); }
@@ -500,7 +500,7 @@ header {
   transform: rotate(270deg);
   padding: .2rem; }
   #scroll-top:hover {
-    background-color: #ff3333; }
+    background-color: #ff5f6c; }
 
 /*Mobile
 ======================================

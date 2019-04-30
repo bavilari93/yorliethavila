@@ -62,11 +62,11 @@
             }
 
             .one {
-                background-image: url(../images/projects/flower.JPG);
+                background-image: url(../images/projects/buildings.JPG);
             }
 
             .two {
-                background-image: url(../images/projects/kid.JPG);
+                background-image: url(../images/projects/sculpture.JPG);
             }
         }
     }
@@ -90,10 +90,10 @@
             background-image: url(../images/projects/dino.JPG);
         }
         &:nth-child(2n) {
-            background-image: url(../images/projects/line.JPG);
+            background-image: url(../images/projects/flower.JPG);
         }
         &:nth-child(3n) {
-            background-image: url(../images/projects/sculpture.JPG);
+            background-image: url(../images/projects/kid.JPG);
         }
         &:nth-child(4n) {
             background-image: url(../images/projects/name.JPG);
@@ -108,7 +108,7 @@
             background-image: url(../images/projects/scultura.JPG);
         }
         &:nth-child(8n) {
-            background-image: url(../images/projects/view.JPG);
+            background-image: url(../images/projects/line.JPG);
         }
         &:nth-child(9n) {
             background-image: url(../images/projects/soul.JPG);

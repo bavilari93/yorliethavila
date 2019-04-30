@@ -21,11 +21,28 @@ $(()=>{
             contentWrappper.style.display = 'flex';
         }
     })
+    // scroll image animation 
+    window.addEventListener('scroll', (() => {
+        let pageTop = $(this).scrollTop(),
+            pageBottom = pageTop + $(this).height() + 0.2;
+        sectionTags = document.querySelectorAll('.slideanim');
 
+
+        if (pageTop > 10) {
+            $('.slideanim').addClass('slide');
+
+
+
+        } else {
+            $('.slideanim').removeClass('slide');
+
+        }
+
+
+    }))
      // scroll icon top on click 
 
     element.addEventListener('click',((event)=>{
-        console.log('yaya')
         event.preventDefault();
         $("#work").animate({ scrollTop: 0 }, "slow");
         return false;

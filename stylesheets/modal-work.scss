@@ -20,9 +20,8 @@
         flex-direction: column;
 
         .project {
-        margin-top:5rem;
+            margin-top: 5rem;
             width: 100%;
-            height: 20rem;
             @include flexbox;
             flex-direction: row;
 
@@ -31,12 +30,15 @@
             }
 
             .tittle {
-                height: 15rem;
+                z-index: 99;
+                height: 22rem;
+
                 text-align: -webkit-center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                background: aliceblue;
                 box-shadow: 2px 1px 7px black;
 
                 h1 {
@@ -46,20 +48,13 @@
 
             }
 
-            .about-work {
-                box-shadow: 8px 0px 2px $Red;
-    position: relative;
-    z-index: 99;
-                height: 20rem;
-                text-align: -webkit-center;
-            }
-
+           
             .work-img {
                 background-image: url(../images/header-img2.jpg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                height: 15rem;
+                height: 20rem;
             }
         }
     }
@@ -117,6 +112,38 @@
     }
 }
 
+
+
+/*float style*/
+.slideanim {
+    visibility: hidden;
+    visibility: visible\9;
+    /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+    visibility: visible;
+    animation: slide 1s;
+}
+
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 #scroll-top {

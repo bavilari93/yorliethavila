@@ -57,7 +57,7 @@ $(()=>{
 
   // Listed for the scroll event and move the image with translate.
   $('.slider').on('scroll', function() {
-    $('.thumbs').css('transform','translate3d(-' + (30-$(this).scrollLeft()/6) + 'px,0,0)');
+    $('.thumbs').css('transform','translate3d(-' + (50-$(this).scrollLeft()/6) + 'px,0,0)');
   });
 
 

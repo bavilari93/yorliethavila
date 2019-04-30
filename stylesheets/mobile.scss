@@ -3,45 +3,50 @@
 */
 
 @media only screen and(max-width:480px){
-	
-	.skills{
-	padding:0rem !important;
+	.skills {
+	    padding: 0rem !important;
 	}
-	.skill{
+
+	.skill {
 	    width: 90% !important;
-	    margin-top:1rem;
-	}
-	.latest-work{
-	flex-direction:column;
-	.work-content{
-	width: 60%;
+	    margin-top: 1rem;
 	}
 
-	}
-	.slide-container{
-	width: 100%;
-	}
-	.prev, .next{
-	margin-left:6rem;
+	.latest-work {
+	    flex-direction: column;
+
+	    .work-content {
+	        width: 60%;
+	    }
+
 	}
 
-	.thumbs{
+	.slide-container {
+	    width: 100%;
+	}
+
+	.prev,
+	.next {
+	    margin-left: 6rem;
+	}
+
+	.thumbs {
 	    width: max-content;
 	}
+
 	.ms-touch.slider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  
-  -ms-overflow-style: none;
-  /* Hides the scrollbar. */
-  
-  -ms-scroll-chaining: none;
-  /* Prevents Metro from swiping to the next tab or app. */
-  
-  -ms-scroll-snap-type: mandatory;
-  /* Forces a snap scroll behavior on your images. */
-  
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-  /* Defines the y and x intervals to snap to when scrolling. */
-}
+	    overflow-x: scroll;
+	    overflow-y: hidden;
+
+	    -ms-overflow-style: none;
+	    /* Hides the scrollbar. */
+
+	    -ms-scroll-chaining: none;
+	    /* Prevents Metro from swiping to the next tab or app. */
+
+	    -ms-scroll-snap-type: mandatory;
+	    /* Forces a snap scroll behavior on your images. */
+
+	    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+	    /* Defines the y and x intervals to snap to when scrolling. */}
 }

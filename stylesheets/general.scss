@@ -30,6 +30,7 @@ h1 {
 
 .content-wrapper {
 	width:100vw;
+        height: fit-content;
     @include flexbox;
     flex-direction: column;
     justify-content:center;

@@ -65,6 +65,7 @@ p {
 
 .content-wrapper {
   width: 100vw;
+  height: fit-content;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -437,7 +438,8 @@ header {
   .slide-container {
     width: 100%; }
 
-  .prev, .next {
+  .prev,
+  .next {
     margin-left: 6rem; }
 
   .thumbs {

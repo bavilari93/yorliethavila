@@ -3,8 +3,9 @@
 */
 
 header {
+height: 40rem;
     width: 100vw;
-    display: inherit;
+    @include flexbox;
     flex-direction: column;
 
 

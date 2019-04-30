@@ -86,8 +86,14 @@ p {
 ======================================
 */
 header {
+  height: 40rem;
   width: 100vw;
-  display: inherit;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
   flex-direction: column; }
   header nav {
     display: inherit;
@@ -165,7 +171,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: auto;
+  height: 40rem;
   margin-bottom: 2rem; }
   .skills .skills-description {
     width: 60vw;
@@ -265,7 +271,7 @@ header {
   align-items: center;
   flex-direction: row;
   width: 100vw;
-  height: max-content;
+  height: 40rem;
   margin-bottom: 2rem; }
   .about .about-image {
     height: 20rem;

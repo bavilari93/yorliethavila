@@ -1,14 +1,14 @@
 $(()=>{
 	// modal
-    const openModalButton = document.querySelectorAll('.modal-open');
+    const openModalButton = document.querySelectorAll('.modal-open'); 
     const element = document.getElementById('scroll-top');
-    console.log(openModalButton)
+
 
     openModalButton.forEach(button=>{
          const contentWrappper = document.querySelector('.content-wrapper');
-         console.log(contentWrappper)
-            const modal = document.getElementById('work');
-            const span = modal.querySelector('span');
+         const modal = document.getElementById('work');
+    const span = modal.querySelector('span');   
+            
         button.addEventListener('click',()=>{
             element.style.display='-webkit-inline-box';
             modal.style.width = '100%';
@@ -25,15 +25,16 @@ $(()=>{
      // scroll icon top on click 
 
     element.addEventListener('click',((event)=>{
+        console.log('yaya')
         event.preventDefault();
-        $("#modal").animate({ scrollTop: 0 }, "slow");
+        $("#work").animate({ scrollTop: 0 }, "slow");
         return false;
     }))
 
     // slider projetcs
     var elementCount = $('.slide').length,
           current      = 1,
-          elemWidth    =300,
+          elemWidth    =280,
           move         = 0;
     $('.next').click(()=>{
         if(current<elementCount){ 
@@ -53,6 +54,12 @@ $(()=>{
             $('.thumbs').css('transform','translateX(-'+move+'px)');
         }
     })
+
+  // Listed for the scroll event and move the image with translate.
+  $('.slider').on('scroll', function() {
+    $('.thumbs').css('transform','translate3d(-' + (100-$(this).scrollLeft()/6) + 'px,0,0)');
+  });
+
 
     
 

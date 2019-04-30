@@ -314,6 +314,51 @@ header {
   overflow: auto;
   overflow-x: hidden;
   transition: 0.5s; }
+  #work .work-content {
+    width: 100vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    #work .work-content .project {
+      margin-top: 5rem;
+      width: 100%;
+      height: 20rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      flex-direction: row; }
+      #work .work-content .project section {
+        width: 50%; }
+      #work .work-content .project .tittle {
+        height: 15rem;
+        text-align: -webkit-center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 2px 1px 7px black; }
+        #work .work-content .project .tittle h1 {
+          font-size: 3em;
+          color: #ff3333; }
+      #work .work-content .project .about-work {
+        box-shadow: 8px 0px 2px #ff3333;
+        position: relative;
+        z-index: 99;
+        height: 20rem;
+        text-align: -webkit-center; }
+      #work .work-content .project .work-img {
+        background-image: url(../images/header-img2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 15rem; }
 
 .icon {
   margin: 1.5rem;
@@ -393,6 +438,21 @@ header {
     width: 100%; }
 
   .prev, .next {
-    margin-left: 6rem; } }
+    margin-left: 6rem; }
+
+  .thumbs {
+    width: max-content; }
+
+  .ms-touch.slider {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    /* Hides the scrollbar. */
+    -ms-scroll-chaining: none;
+    /* Prevents Metro from swiping to the next tab or app. */
+    -ms-scroll-snap-type: mandatory;
+    /* Forces a snap scroll behavior on your images. */
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+    /* Defines the y and x intervals to snap to when scrolling. */ } }
 
 /*# sourceMappingURL=style.css.map */

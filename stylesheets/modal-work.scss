@@ -32,7 +32,6 @@
             .tittle {
                 z-index: 99;
                 height: 22rem;
-
                 text-align: -webkit-center;
                 display: flex;
                 justify-content: center;
@@ -46,16 +45,73 @@
                     color: $Red;
                 }
 
+                p {
+                    padding: 0rem 1rem;
+                }
+
             }
 
-           
+
             .work-img {
-                background-image: url(../images/header-img2.jpg);
-                background-repeat: no-repeat;
+                height: 20rem;
                 background-position: center;
                 background-size: cover;
-                height: 20rem;
+                background-repeat: no-repeat;
+
+
             }
+
+            .one {
+                background-image: url(../images/projects/flower.JPG);
+            }
+
+            .two {
+                background-image: url(../images/projects/kid.JPG);
+            }
+        }
+    }
+}
+
+.more-projects {
+    @include flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    margin-top:2rem;
+
+    div {
+        height: 20rem;
+        width: 33%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:nth-child(1n) {
+            background-image: url(../images/projects/dino.JPG);
+        }
+        &:nth-child(2n) {
+            background-image: url(../images/projects/line.JPG);
+        }
+        &:nth-child(3n) {
+            background-image: url(../images/projects/sculpture.JPG);
+        }
+        &:nth-child(4n) {
+            background-image: url(../images/projects/name.JPG);
+        }
+        &:nth-child(5n) {
+            background-image: url(../images/projects/carboncillo.JPG);
+        }
+        &:nth-child(6n) {
+            background-image: url(../images/projects/plato.JPG);
+        }
+        &:nth-child(7n) {
+            background-image: url(../images/projects/scultura.JPG);
+        }
+        &:nth-child(8n) {
+            background-image: url(../images/projects/view.JPG);
+        }
+        &:nth-child(9n) {
+            background-image: url(../images/projects/soul.JPG);
         }
     }
 }

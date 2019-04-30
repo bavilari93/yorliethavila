@@ -57,7 +57,22 @@
     float: left;
     position: relative;
     transition: all 2s;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    &:nth-child(1n){
+    background-image:url(../images/projects/sculpture.JPG);
+    }
+    &:nth-child(2n){
+    background-image:url(../images/projects/view.JPG);
+    }
+    &:nth-child(3n){
+    background-image:url(../images/projects/dino.JPG);
+    }
+
 }
+    
+
 
 .prev,
 .next {

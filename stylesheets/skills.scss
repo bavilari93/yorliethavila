@@ -6,8 +6,8 @@
     @include flexbox;
     flex-direction: column;
     width: 100vw;
-        height:25rem;
-        margin-bottom:2rem;
+    height: 25rem;
+    margin-bottom: 2rem;
 
     .skills-description {
         width: 60vw;
@@ -25,10 +25,20 @@
 
         .skill {
             width: 40%;
-            text-align:center;
+            text-align: center;
             height: 10rem;
-    border-radius: .9em;
-    background: white;
+            border-radius: .9em;
+            background: white;
+            @include flexbox;
+            justify-content:center;
+            align-items:center;
+            a{
+                text-decoration:none;
+                color:$Blue;
+            }
+            &:hover{
+            transform:scale(1.2);
+            }
         }
     }
 }

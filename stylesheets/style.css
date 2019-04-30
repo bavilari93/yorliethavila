@@ -188,7 +188,20 @@ header {
       text-align: center;
       height: 10rem;
       border-radius: .9em;
-      background: white; }
+      background: white;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center; }
+      .skills .skill-content .skill a {
+        text-decoration: none;
+        color: #66cccc; }
+      .skills .skill-content .skill:hover {
+        transform: scale(1.2); }
 
 /*Work
 ======================================
@@ -240,7 +253,16 @@ header {
   background: #fff;
   float: left;
   position: relative;
-  transition: all 2s; }
+  transition: all 2s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .thumbs div:nth-child(1n) {
+    background-image: url(../images/projects/sculpture.JPG); }
+  .thumbs div:nth-child(2n) {
+    background-image: url(../images/projects/view.JPG); }
+  .thumbs div:nth-child(3n) {
+    background-image: url(../images/projects/dino.JPG); }
 
 .prev,
 .next {
@@ -277,7 +299,7 @@ header {
     background-image: url(../images/Header.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: contain; }
   .about .about-content {
     width: 50%;
     text-align: -webkit-center;
@@ -353,12 +375,54 @@ header {
         #work .work-content .project .tittle h1 {
           font-size: 3em;
           color: #ff3333; }
+        #work .work-content .project .tittle p {
+          padding: 0rem 1rem; }
       #work .work-content .project .work-img {
-        background-image: url(../images/header-img2.jpg);
-        background-repeat: no-repeat;
+        height: 20rem;
         background-position: center;
         background-size: cover;
-        height: 20rem; }
+        background-repeat: no-repeat; }
+      #work .work-content .project .one {
+        background-image: url(../images/projects/flower.JPG); }
+      #work .work-content .project .two {
+        background-image: url(../images/projects/kid.JPG); }
+
+.more-projects {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  margin-top: 2rem; }
+  .more-projects div {
+    height: 20rem;
+    width: 33%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .more-projects div:nth-child(1n) {
+      background-image: url(../images/projects/dino.JPG); }
+    .more-projects div:nth-child(2n) {
+      background-image: url(../images/projects/line.JPG); }
+    .more-projects div:nth-child(3n) {
+      background-image: url(../images/projects/sculpture.JPG); }
+    .more-projects div:nth-child(4n) {
+      background-image: url(../images/projects/name.JPG); }
+    .more-projects div:nth-child(5n) {
+      background-image: url(../images/projects/carboncillo.JPG); }
+    .more-projects div:nth-child(6n) {
+      background-image: url(../images/projects/plato.JPG); }
+    .more-projects div:nth-child(7n) {
+      background-image: url(../images/projects/scultura.JPG); }
+    .more-projects div:nth-child(8n) {
+      background-image: url(../images/projects/view.JPG); }
+    .more-projects div:nth-child(9n) {
+      background-image: url(../images/projects/soul.JPG); }
 
 .icon {
   margin: 1.5rem;
@@ -457,6 +521,9 @@ header {
     margin: 10rem 0rem; }
     .latest-work .work-content {
       width: 60%; }
+
+  .more-projects div {
+    width: 50%; }
 
   /*image slider touch*/
   .slide-container {

@@ -197,6 +197,7 @@ header {
   display: flex;
   align-items: center;
   width: 100vw;
+  height: 30rem;
   margin: 5rem 0rem; }
   .latest-work .work-content {
     width: 40%;

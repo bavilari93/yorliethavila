@@ -5,6 +5,7 @@
 .latest-work {
     @include flexbox;
     width: 100vw;
+    height: 30rem;
     margin: 5rem 0rem;
 
     .work-content {

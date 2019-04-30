@@ -65,7 +65,6 @@ p {
 
 .content-wrapper {
   width: 100vw;
-  height: fit-content;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;

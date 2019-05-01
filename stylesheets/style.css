@@ -507,8 +507,16 @@ header {
 ======================================
 */
 @media only screen and (max-width: 480px) {
+  p {
+    font-size: 1.5em; }
+
+  h1 {
+    font-size: 2em; }
+
   .skills {
     padding: 0rem !important; }
+    .skills .skills-description {
+      width: 80vw; }
 
   .skill {
     width: 90% !important;
@@ -550,11 +558,12 @@ header {
 
   /*about*/
   .about {
-    flex-direction: column;
-    height: 30rem; }
+    flex-direction: column; }
     .about .about-image {
       width: 100%;
       margin-bottom: 1rem; }
+    .about .about-content {
+      width: 90%; }
     .about .icons {
       justify-content: normal; }
       .about .icons a {

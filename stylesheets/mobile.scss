@@ -3,8 +3,17 @@
 */
 
 @media only screen and(max-width:480px) {
+    p{
+    font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
     .skills {
         padding: 0rem !important;
+        .skills-description{
+            width: 80vw;
+        }
     }
 
     .skill {
@@ -65,25 +74,26 @@
     }
 
     /*about*/
-.about {
-    flex-direction: column;
-    height: 30rem;
+    .about {
+        flex-direction: column;
 
-    .about-image {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-
-    .icons {
-        justify-content: normal;
-
-        a {
-            font-size: x-large;
-            padding: 0 .9rem;
+        .about-image {
+            width: 100%;
+            margin-bottom: 1rem;
         }
+        .about-content{
+            width:90%;
+        }
+
+
+        .icons {
+            justify-content: normal;
+
+            a {
+                font-size: x-large;
+                padding: 0 .9rem;
+            }
+        }
+
     }
-
 }
-}
-

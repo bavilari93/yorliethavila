@@ -21,10 +21,11 @@
         }
 
     }
-    .more-projects{
-    div{
-    width:50%;
-    }
+
+    .more-projects {
+        div {
+            width: 50%;
+        }
     }
 
     /*image slider touch*/
@@ -73,4 +74,14 @@
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .icons {
+        justify-content: normal;
+
+        a {
+            font-size: x-large;
+            padding: 0 .9rem;
+        }
+    }
+
 }

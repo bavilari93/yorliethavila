@@ -200,8 +200,6 @@ header {
       .skills .skill-content .skill a {
         text-decoration: none;
         color: #66cccc; }
-      .skills .skill-content .skill:hover {
-        transform: scale(1.2); }
 
 /*Work
 ======================================
@@ -548,13 +546,19 @@ header {
     -ms-scroll-snap-type: mandatory;
     /* Forces a snap scroll behavior on your images. */
     -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-    /* Defines the y and x intervals to snap to when scrolling. */ } }
-/*about*/
-.about {
-  flex-direction: column;
-  height: 30rem; }
-  .about .about-image {
-    width: 100%;
-    margin-bottom: 1rem; }
+    /* Defines the y and x intervals to snap to when scrolling. */ }
+
+  /*about*/
+  .about {
+    flex-direction: column;
+    height: 30rem; }
+    .about .about-image {
+      width: 100%;
+      margin-bottom: 1rem; }
+    .about .icons {
+      justify-content: normal; }
+      .about .icons a {
+        font-size: x-large;
+        padding: 0 .9rem; } }
 
 /*# sourceMappingURL=style.css.map */
